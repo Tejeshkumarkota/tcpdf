@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Draft Extended Prelease offer ICT</title>
+	<style type="text/css">
+		@font-face {
+			font-family: "TimesNewRoman";
+			src: url("https://exalogic-store.s3.us-east-2.amazonaws.com/tasc/templates/font/times-new-roman/times-new-roman-bold.ttf") format("truetype");
+			font-weight: bold;
+			font-style: normal;
+			font-display: swap;
+		}
+		@font-face {
+			font-family: "TimesNewRoman";
+			src: url("https://exalogic-store.s3.us-east-2.amazonaws.com/tasc/templates/font/times-new-roman/times-new-roman.ttf") format("truetype");
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+		}
+		@font-face {
+			font-family: "TimesNewRoman";
+			src: url("https://exalogic-store.s3.us-east-2.amazonaws.com/tasc/templates/font/times-new-roman/times-new-roman-italic.ttf") format("truetype");
+			font-weight: normal;
+			font-style: italic;
+			font-display: swap;
+		}
+		@font-face {
+			font-family: "TimesNewRoman";
+			src: url("https://exalogic-store.s3.us-east-2.amazonaws.com/tasc/templates/font/times-new-roman/times-new-roman-bold-italic.ttf") format("truetype");
+			font-weight: bold;
+			font-style: italic;
+			font-display: swap;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Header -->
+	<div>
+		<img src="/home/vcap/app/htdocs/uploads/images/FutureMilez/FM-New-Logo.png" alt="future_milez_logo" height="80">
+	</div> 
+
+	<!-- Body -->
+<table cellpadding="5" cellspacing="0" style="
+width: 100%;
+font-weight: normal;
+font-family: 'TimesNewRoman' !important;
+font-size: 14px;
+">
+<tbody><tr>
+	<td>
+		<table cellpadding="3" cellspacing="0" style="width: 100%; margin-top: 20px;font-family: 'TimesNewRoman';font-size:14px">
+			<tbody><tr>
+				<td style="width: 30%">Date</td>
+				<td>: <b>{Date}</b></td>
+			</tr>
+			<tr>
+				<td>Employee Number</td>
+				<td>: <b>{Applicant Id}</b></td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>: <b>{FullName}</b></td>
+			</tr>
+			<tr>
+				<td>Contact No</td>
+				<td>: <b>{Mobile Number}</b></td>
+			</tr>
+			<tr>
+				<td>Email ID</td>
+				<td>:<b> {Email Id}</b></td>
+			</tr>
+		</tbody></table>
+	</td>
+</tr>
+<tr>
+	<td style="
+	padding-top: 20px;
+	text-align: center;
+	font-size:18px;
+	font-weight:bold;
+	">
+		<u>Employment Contract</u>
+	</td>
+</tr>
+<tr>
+	<td>Dear <b>{First Name}</b></td>
+</tr>
+<tr>
+	<td>Congratulations!</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 15px;padding-top: 15px; font-weight: bold;font-size:16px">
+		<u>New job, new adventure - here is the fun stuff!</u>
+	</td>
+</tr>
+<tr>
+	<td style="font-weight: bold"><u>Designation :</u></td>
+</tr>
+<tr>
+	<td>
+		<table cellpadding="3" cellspacing="0" style="width: 100%;font-family: 'TimesNewRoman';font-size:14px">
+			<tbody><tr>
+				<td style="width:30%">Visa Sponsor</td>
+				<td>: <b>Future Milez DMCC</b></td>
+			</tr>
+			<tr>
+				<td>Designation</td>
+				<td>: <b>{PositionDescription}</b></td>
+			</tr>
+			<tr>
+				<td>Work Location</td>
+				<td>: <b>{WorkLocationDescription}</b></td>
+			</tr>
+		</tbody></table>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		<strong style="text-decoration: underline">Work Location: -</strong>You
+		will be outsourced to work for&nbsp;<span style="font-weight: bolder;">{ClientName}</span>, a client of FUTURE MILEZ
+		DMCC. Future Milez DMCC can transfer you to other clients or locations
+		based on similar terms and conditions with immediate notice.
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;; font-weight: bold">
+		<u>Monthly Compensation:</u>
+	</td>
+</tr>
+<tr>
+	<td style="width: 100%; padding-left: 20px">
+		<table cellpadding="3" cellspacing="0" style="width: 100%;font-size:14px">
+			<tbody><tr>
+				<td style="width: 30%;">a. Basic</td>
+				<td>: AED <b>{BASIC}</b></td>
+			</tr>
+			<tr>
+				<td>b. HRA</td>
+				<td>: AED <b>{HRA}</b></td>
+			</tr>
+			<tr>
+				<td>c. Transportation</td>
+				<td>: AED <b>{TRANSPORT}</b></td>
+			</tr>
+			<tr>
+				<td>d. Utilities</td>
+				<td>: AED <b>{UTILITIES}</b></td>
+			</tr>
+			<tr>
+				<td>e. Leave Encashment</td>
+				<td>: AED <b>0</b></td>
+			</tr>
+			<tr>
+				<td>f. Ticket Encashment</td>
+				<td>: AED <b>0</b></td>
+			</tr>
+			<tr>
+				<td>
+					<strong>g. Total Salary</strong>
+				</td>
+				<td><strong>: AED {Totals}</strong></td>
+			</tr>
+		</tbody></table>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		<strong>1.Terms and Conditions:</strong>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		a. The above salary is guaranteed upon the successful completion of 218
+		orders per month.
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		b. You are eligible to receive AED 7.5 for each delivery over and above
+		218 deliveries.
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		c. Your leave salary and ticket allowances will be provided to you as an
+		encashment which will be part of your monthly salary and these
+		benefits will not be part of your End of Services Benefit.
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		d. The above salary is deductible, If you do not complete the minimum 260
+		delivery a month, due to late login, early logouts, rejecting assigned
+		orders etc.. And any such reasons due which you will not be able to
+		complete the daily minimum working hours or delivery requirement.
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		e. Fuel Expense is part of your delivery amount and is borne by you.
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		f. Any expense incurred on the vehicle provided by the company will be
+		recovered from per-order remuneration calculated on a monthly basis
+		which includes but is not limited to damage caused by you to the
+		vehicle, RTA fine, penalties, and Salik, as applicable.
+</td></tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+	   <u style="font-weight: bold;">Annual leave’s and other benefits: </u>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		a. Sick leaves as per UAE Labour Law, subject to a medical certificate
+		issued by an authorized source as per the guidelines of the concerned
+		health authority
+</td></tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		b. End of service gratuity as per UAE Labour Law paid on basic salary.
+</td></tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		c. Medical Insurance for SELF under FUTURE MILEZ’s Group Insurance
+		Policy, upon completion of medical test.
+</td></tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		d. 6 days working in a week,66 hours a week.
+</td></tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		<strong>Little bit of paperwork, lots of trust - here is what we require!
+		</strong>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		<u style="font-weight: bold;">Documents &amp; Clearance:</u><br><br>
+	   This Offer Letter is subject to receipt of various documents and clearances, as listed below:
+</td></tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		a. Signed Non-Disclosure Agreement provided by FUTURE MILEZ
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		b. Police clearance certificate issued from the UAE, if required
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		c. Two satisfactory reference checks
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		d. Attested educational certificate and credentials, if required
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		e. Successful CID clearance, if required
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		f. Medical fitness certificate from a government authority
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		g. Visa and legal entry permit by the DMCC immigration authorities.
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		h. Offer of services from the client. If the client’s offer is
+		withdrawn prior to issuing your visa then FUTURE MILEZ can
+		withdraw the offer without any financial compensation.
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		<u style="font-weight: bold">Personal Information:</u>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		a. Any personal information provided to FUTURE MILEZ will be stored on a
+		cloud-based business application and will be used solely for securing
+		your employment.
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		b. Your personal information is safeguarded and protected, however, since
+		no data transmission over internet can be guaranteed to be 100%
+		secure, FUTURE MILEZ will not be liable for any exposure of
+		information from security risks such as viruses and unauthorized use
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		c. We may share your personal information with our clients and with third
+		parties who shall be bound by provisions of confidentiality and you
+		consent to sharing of such information.
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		<u style="font-weight: bold">Non-Disclosure Agreement:</u>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		By signing this agreement, you agree to keep all information related
+		to FUTURE MILEZ, its businesses, and finances confidential.
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		<strong>Greater the power, greater the responsibility - here is what you should
+			know
+		</strong>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		<u style="font-weight: bold">General Conditions:</u>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		a. Employment becomes operative only when you commence the delivery
+		services for the client.
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		b. Your day to day responsibilities will be assigned and supervised by
+		the client directly
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		c. You are expected to follow all rules and regulations laid down by the
+		client
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		d. It is recommended that you apply for travel insurance or continue your
+		existing insurance till FUTURE MILEZ applies for your medical
+		insurance
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		e. Any appearance or summons to appear at any criminal court, or for any
+		criminal conviction or civil order, prior to or during the period of
+		your employment has to be reported to FUTURE MILEZ
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		<u style="font-weight: bold">Absenteeism:</u>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		a. Leaves during probation are unpaid leaves.
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		b. 7 consecutive or 20 non-consecutive days of absenteeism without
+		prior written permission could lead to termination without notice
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		<u style="font-weight: bold">Outside Occupation:</u>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		Pursuit of alternate occupation is prohibited unless approved by
+		FUTURE MILEZ in writing.
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		<u style="font-weight: bold">Fraud or Negligence:</u>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		If there is an allegation of misconduct, criminal act, act of
+		disobedience, insobriety or insubordination; employment will be
+		terminated without notice and end of service benefits
+		<br>
+		False or misleading information will lead to termination
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		<strong>Building partnerships, achieving milestones - here are some pointers!
+		</strong>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		<u style="font-weight: bold">Notice Period &amp; Termination during probation:</u>
+	</td>
+</tr>
+<tr>
+	<td>
+		a. You can terminate your services by giving <b>{Notice_Period_prb}</b> notice
+	</td>
+</tr>
+<tr>
+	<td>
+		b. FUTURE MILEZ may deduct equivalent salary if no prior notice has
+		been given by you
+	</td>
+</tr>
+<tr>
+	<td>
+		c. FUTURE MILEZ can terminate your services by giving <b>{Notice_Period_prb}</b> notice
+	</td>
+</tr>
+<tr>
+	<td>
+		d. Post resignation/termination, you must return all assets belonging
+		to the client and FUTURE MILEZ or pay financial damages instead.
+	</td>
+</tr>
+
+<tr>
+	<td style="padding-bottom: 10px;">
+		<u style="font-weight: bold">Notice Period &amp; Termination after probation:</u>
+	</td>
+</tr>
+<tr>
+	<td>
+		a. You can terminate your services by giving <b>{Notice_Period} days’</b>  notice
+	</td>
+</tr>
+<tr>
+	<td>
+		b. FUTURE MILEZ may deduct equivalent salary if no prior notice has
+		been given by you
+	</td>
+</tr>
+<tr>
+	<td>
+		c. FUTURE MILEZ can terminate your services by giving <b>{Notice_Period} days’</b> notice
+	</td>
+</tr>
+<tr>
+	<td>
+		d. If you resign within a year, FUTURE MILEZ will recover expenses of 
+		any additional training opted by you. This will be limited to one month’s
+		salary and will be deducted from your full and final settlement
+	</td>
+</tr>
+<tr>
+	<td>
+		e. Post resignation/termination, you must return all materials and 
+		properties belonging to the client and FUTURE MILEZ or pay financial 
+		damages instead.
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		<strong>Penalties </strong>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		You are expected to comply with all instructions given by the Company and
+		its client. Please note that failure to comply with the instructions and
+		more specifically with the requirements below shall result in the
+		deduction of penalties from your monthly remuneration. You consent to such
+		deductions from your monthly remuneration and agree not to initiate claims
+		against the Company for any deductions made. The fines mentioned hereunder
+		are an approximate and genuine pre-estimate of the damage which will be
+		incurred by the Company in case of your breach
+	</td>
+</tr>
+<tr>
+	<td>
+		<table cellpadding="0" cellspacing="0" style="width: 100%; margin-bottom: 20px;font-size:13px">
+			<thead>
+				<tr>
+					<th style="
+				padding: 10px;
+				background-color: #dbdbdb;
+				border-right: 1px solid #ffff;
+				"> Sr </th>
+					<th style="
+				padding: 10px;
+				background-color: #dbdbdb;
+				border-right: 1px solid #ffff;
+				">  KPI </th>
+					<th style="
+				padding: 10px;
+				background-color: #dbdbdb;
+				border-right: 1px solid #ffff;
+				"> Definition</th>
+					<th style="
+					padding: 10px;
+					background-color: #dbdbdb;
+					border-right: 1px solid #ffff;
+					"> % </th>
+					<th style="padding: 10px; background-color: #dbdbdb">
+						Penalty Amount / Day
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">1</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						Deliver Damahed / Spoiled items due to late delivery by the driver
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						Items cancelation or replacement by the customer or full order
+						cancellation by the customer
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">100%</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						Value of the damaged/spoil
+					</td>
+				</tr>
+				<tr>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">2</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						Late return of undelivered sensitive items to store/warehouse
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						Sensitive items (fresh food, dairy products and frozen items)
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">100%</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						Value of the undelivered items subject to a cap of AED 200.
+					</td>
+				</tr>
+				<tr>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">3</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						Very late return of undelivered items to store/warehouse
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						Next day on Non Sensitive items (non fresh/non dairy/non frozen)
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">100%</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">100 AED</td>
+				</tr>
+				<tr>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">4</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						Vehicle Cleanliness
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						Ensire all vehicles used are Clean and Maintained at all times.
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">100%</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">200 AED</td>
+				</tr>
+				<tr>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">5</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">Uniform</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						All Drivers while on duty must wear Carrefour uniform (if
+						provided)
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">100%</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">200 AED</td>
+				</tr>
+				<tr>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">6</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						Driver Reporting Time/Absenteeism
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						Pre assigned number of Drives Must ensure theu report for Duty and
+						as per the scheduled roaster - On Time (with a 10minuted grace
+						period). Do not leave before the agreed time of end of shift
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">100%</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">100 AED</td>
+				</tr>
+				<tr>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">7</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						Assets Mishandling
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						Driver Must return all company assets (thermal insulation, freezer
+						bags, icegel packs, POS machines, any other company assets) to the
+						company store ar the end of the shift in the same condition as
+						received subject to reasonable wear and tear
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">100%</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						In case of damage penalty as per asset cost
+					</td>
+				</tr>
+				<tr>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">8</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						Cas on Delivery orders cash to be deposited daily
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						All collected cash from customers to be deposited the same day by
+						Drivers
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">100%</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">200 AED</td>
+				</tr>
+				<tr>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">9</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						Vehicle compliance
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">
+						All the vehicle should be compliant as per RTA regulation
+						(Cars/bikes should be under company name/rental, all bikes should
+						have boxes as per RTA etc.)
+					</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">100%</td>
+					<td style="border: 1px solid #dbdbdb; padding: 10px">200 AED</td>
+				</tr>
+			</tbody>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		In the event that the Company has to bear any fines on account of any
+		actions/omissions by you as mentioned above and such fines as calculated
+		on a monthly/quarterly basis exceed your monthly remuneration, the Company
+		shall have the right to claim these from you as damages and you agree to
+		reimburse the Company with all losses incurred by it on your account.
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		We look forward to having you onboard with us. Sign this offer letter and
+		let’s get you started soon!
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px; font-weight: bold">
+		<u>Declaration: </u>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		<u style="font-weight: bold">I agree and acknowledge:</u>
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		a. To keep information related to FUTURE MILEZ and its clients
+		confidential and private
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		b. I am legally entitled to work, without any legal restriction
+		imposed on me by any current or former employer
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		c. I have no criminal records in the country of my origin or the UAE
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		d. I am accountable to inform FUTURE MILEZ of my change in social
+		status
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		e. That these conditions are in addition to those specified in the
+		UAE Labour contract
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		f. That this offer of employment may be revoked at FUTURE MILEZ’s
+		discretion at any time
+	</td>
+</tr>
+<tr>
+	<td style="padding-bottom: 10px;">
+		g. That I will abide by all the terms and conditions specified in
+		this offer letter
+	</td>
+</tr>
+<!-- <tr>
+	<td>
+		<table cellpadding="0" cellspacing="0" style="width: 100%; margin-top: 40px;font-size:14px">
+			<tr>
+				<td valign="top" style="width:60%">
+					<b>For and onbehalf of Future Milez</b><br /><br /><br />
+					<br /><br /><br /><br />
+					<strong>HR Department</strong>
+				</td>
+				<td valign="top" style="width:40%">
+					<b>Accepted and Agreed</b><br /><br /><br />
+					<table cellpadding="3" cellspacing="0" style="width: 100%; margin-top: 40px;font-size:14px;">
+						<tr>
+							<td style="width: 30%">Name</td>
+							<td style="width: 70%">: <b>{FullName}</b></td>
+						</tr>
+						<tr>
+							<td style="width: 30%">Designation</td>
+							<td style="width: 70%">: <b>{PositionDescription}</b></td>
+						</tr>
+						<tr>
+							<td style="width: 30%">Date</td>
+							<td style="width: 70%">: <b>{Date}</b></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr> -->
+</tbody></table>
+<br><br><br><br>
+<div style="width:30%;float:left;font-size:14px;">
+<strong>For and onbehalf of Future Milez</strong>
+<br><br><br>
+<img src="/home/vcap/app/htdocs/uploads/images/FutureMilez/FM-SIGNATURE.png" alt="FM-SIGNATURE" style="height: 60px;">
+<br><br><br><br>
+<strong>Future Milez DMCC</strong><br>
+<strong>HR Department</strong>
+</div>
+<div style="width:30%;float:left;">
+<br><br>
+<img src="/home/vcap/app/htdocs/uploads/images/FutureMilez/FM-STAMP.png" alt="FM-STAMP" style="height: 100px;">
+</div>
+<div style="width:40%;float:left;font-size:14px;">
+<strong>Accepted and Agreed</strong><br><br><br>
+<div style="font-size:0px;">#sh1#</div>
+<br><br>
+<table style="width:100%;font-weight:noraml;font-family: 'TimesNewRoman';font-size:14px">
+	<tbody><tr>
+		<td style="width: 30%;">Name </td>
+		<td style="width: 70%;">: <strong>{FullName}</strong></td>
+	</tr>
+	<tr>
+		<td style="width: 30%;">Designation</td>
+		<td style="width: 70%;">: <strong>{PositionDescription}</strong></td>
+	</tr>
+	<tr>
+		<td style="width: 30%;">Date </td>
+		<td style="width: 70%;">: <strong>{Date}</strong></td>
+	</tr>
+</tbody></table>
+</div>
+<br><br><br><br><br><br><br><br>
+
+<!-- Footer -->
+<table cellpadding="5" cellspacing="0" style="
+    width: 100%;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: 'TimesNewRoman' !important;
+    padding-top: 40px;
+  ">
+    <tbody><tr>
+        <td style="text-align: center;padding: 10px;
+                    background-color: #f9f9f9;">
+            Future Milez DMCC. Unit No. 1505, Mazaya Business Avenue BB2, Plot
+            No. JLTE-PH2-BB2, Jumeirah Lake Towers, Dubai, UAE
+        </td>
+    </tr>
+</tbody></table>
+
+</body>
+</html>
